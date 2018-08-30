@@ -1,0 +1,15 @@
+<h1>Currency Table</h1>
+<hr><br>
+<h4>Currency Array Contains: {{currency}}</h4>
+<br>
+<button class="btn btn-primary" (click)="fetchRate()">Prepare Table</button>
+<hr><br>
+<button class="btn btn-primary" (click)="displayChart()">showChart</button>
+<br>
+<br>
+
+<table cellpadding="10">
+  <tr *ngFor="let item1 of currencyTable">
+      <td *ngFor="let item of item1">{{item}}</td>
+  </tr>
+</table>
